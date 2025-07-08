@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nation Plume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+
+  <header>
+    <img src="logo.png" alt="Logo Nation Plume" />
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Wiki</a>
+      <a href="#">Téléchargement</a>
+      <a href="#">Nous rejoindre</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Commencez Votre Aventure</h1>
+      <p>Nation Plume est un serveur Minecraft unique, basé sur la créativité, l'exploration et la communauté.</p>
+      <div class="buttons">
+        <a href="howtoplay.html" target="_blank" rel="noopener noreferrer" class="btn">Jouer</a>
+      </div>
+      <div class="stats">
+        <div><strong>???</strong>Joueurs uniques</div>
+        <div><strong>???</strong>Joueurs journaliers</div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="minecraft-scene.png" alt="Minecraft Scene" />
+    </div>
+  </section>
+
+  <section class="map-section">
+    <h2>Carte du Monde</h2>
+
+    <div class="map-wrapper" id="map-wrapper">
+      <button id="start-map-btn">Start</button>
+      <iframe
+        id="map-iframe"
+        src="https://map.catcraftmc.com/#world"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <section class="creators-skins" style="margin-top: 40px;">
+      <div class="skin-container">
+        <iframe src="https://minerender.org/embed/skin/?skin=AurelDefense&shadow=true" frameborder="0"></iframe>
+        <div class="skin-name">AurelDefense</div>
+        <div class="skin-role">Chef de projet</div>
+      </div>
+
+      <div class="skin-container">
+        <iframe src="https://minerender.org/embed/skin/?skin=mimipepper&shadow=true" frameborder="0"></iframe>
+        <div class="skin-name">Mimipepper</div>
+        <div class="skin-role">Directeur artistique</div>
+      </div>
+
+      <div class="skin-container">
+        <iframe src="https://minerender.org/embed/skin/?skin=0wos_&shadow=true" frameborder="0"></iframe>
+        <div class="skin-name">0wos_</div>
+        <div class="skin-role">Web Designer</div>
+      </div>
+    </section>
+  </section>
+
+  <script src="stars.js"></script>
+  <script>
+    const btn = document.getElementById('start-map-btn');
+    const iframe = document.getElementById('map-iframe');
+    const wrapper = document.getElementById('map-wrapper');
+
+    btn.addEventListener('click', () => {
+      iframe.style.display = 'block';
+      btn.style.display = 'none';
+      wrapper.classList.add('dimmed');
+    });
+  </script>
+</body>
+</html>
