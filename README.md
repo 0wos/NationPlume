@@ -32,14 +32,6 @@ Ce dépôt contient le site officiel de Nation Plume, avec :
 - `stars.js` – Animation de fond
 - Ressources diverses (logo, visuels à venir)
 
-## 🛠️ Utilisation locale
-
-1. Clone ou télécharge ce dépôt :
-   ```bash
-   git clone https://github.com/ton-utilisateur/nation-plume-site.git
-   ```
-2. Ouvre `index.html` dans ton navigateur.
-
 ## 📣 Rejoignez-nous !
 
 > Le serveur est en cours de développement / ou déjà accessible (à adapter selon ton cas).  
