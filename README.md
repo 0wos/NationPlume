@@ -37,6 +37,8 @@ Ce dépôt contient le site officiel de Nation Plume, avec :
 > Le serveur est en cours de développement / ou déjà accessible (à adapter selon ton cas).  
 Suivez les annonces, posez vos questions, et rejoignez la communauté via notre serveur Discord.
 
+## 🧭 Notre Github Page
+https://0wos.github.io/NationPlume/
 ---
 
 **Nation Plume** – Une aventure collective, stratégique et ambitieuse.
