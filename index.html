@@ -40,12 +40,11 @@
 
   <section class="map-section">
     <h2>Carte du Monde</h2>
-
     <div class="map-wrapper" id="map-wrapper">
       <button id="start-map-btn">Start</button>
       <iframe
         id="map-iframe"
-        src="https://map.catcraftmc.com/#world"
+        data-src="https://map.catcraftmc.com/#world"
         allowfullscreen
         loading="lazy"
       ></iframe>
@@ -57,19 +56,34 @@
         <div class="skin-name">AurelDefense</div>
         <div class="skin-role">Chef de projet</div>
       </div>
-
       <div class="skin-container">
         <iframe src="https://minerender.org/embed/skin/?skin=mimipepper&shadow=true" frameborder="0"></iframe>
         <div class="skin-name">Mimipepper</div>
         <div class="skin-role">Directeur artistique</div>
       </div>
-
       <div class="skin-container">
         <iframe src="https://minerender.org/embed/skin/?skin=0wos_&shadow=true" frameborder="0"></iframe>
         <div class="skin-name">0wos_</div>
         <div class="skin-role">Web Designer</div>
       </div>
     </section>
+  </section>
+
+
+  <section class="news-section">
+    <h2>News</h2>
+    <div class="news-grid">
+      <article class="news-card">
+        <h3>Lancement Officiel du Serveur</h3>
+        <p>...</p>
+        <span class="news-date">Date à déterminer</span>
+      </article>
+      <article class="news-card">
+        <h3>...</h3>
+        <p>...</p>
+        <span class="news-date">...</span>
+      </article>
+    </div>
   </section>
 
   <script src="stars.js"></script>
@@ -79,6 +93,7 @@
     const wrapper = document.getElementById('map-wrapper');
 
     btn.addEventListener('click', () => {
+      iframe.src = iframe.dataset.src;
       iframe.style.display = 'block';
       btn.style.display = 'none';
       wrapper.classList.add('dimmed');
