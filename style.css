@@ -345,3 +345,126 @@ nav a:hover::after {
   display: block;
   text-align: right;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 6px 10px;
+    font-size: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .stats div strong {
+    font-size: 20px;
+  }
+
+  .hero-image {
+    max-width: 90%;
+    margin-top: 30px;
+  }
+
+  .map-section {
+    padding: 40px 20px;
+  }
+
+  .map-section h2 {
+    font-size: 28px;
+  }
+
+  .map-wrapper,
+  #map-iframe {
+    height: 60vh;
+  }
+
+  .creators-skins {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 10px;
+  }
+
+  .skin-container iframe {
+    width: 200px;
+    height: 300px;
+  }
+
+  .skin-name {
+    font-size: 16px;
+  }
+
+  .skin-role {
+    font-size: 14px;
+  }
+
+  .news-section {
+    padding: 40px 20px;
+  }
+
+  .news-section h2 {
+    font-size: 28px;
+  }
+
+  .news-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .news-card {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .news-card h3 {
+    font-size: 18px;
+  }
+
+  .news-card p {
+    font-size: 14px;
+  }
+
+  .news-date {
+    font-size: 12px;
+  }
+}
