@@ -17,8 +17,8 @@
       <a href="#">Wiki</a>
       <a href="howtoplay.html">Nous rejoindre</a>
       <a href="#">Nous Contacter</a>
-      <a href="credit.html">Crédit</a>
-      <a href="http://nationplume.craft.gg:40013/#world:13845:0:7386:17937:0:0:0:0:perspective">Carte interactive</a>
+      <a href="credit.html">Crédits</a>
+      <a href="http://nationplume.craft.gg:40013/#world:13845:0:7386:17937:0:0:0:0:perspective" target="_blank" rel="noopener noreferrer">Carte interactive</a>
     </nav>
   </header>
 
@@ -27,7 +27,7 @@
       <h1>Commencez Votre Aventure</h1>
       <p>Nation Plume est un serveur Minecraft unique, basé sur la créativité, l'exploration et la communauté.</p>
       <div class="buttons">
-        <a href="howtoplay.html" target="_blank" rel="noopener noreferrer" class="btn">Jouer</a>
+        <a href="howtoplay.html" class="btn" target="_blank" rel="noopener noreferrer">Jouer</a>
       </div>
       <div class="stats">
         <div><strong>???</strong>Joueurs uniques</div>
@@ -35,63 +35,53 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="minecraft-scene.png" alt="Minecraft Scene" />
+      <img src="minecraft-scene.png" alt="Scène Minecraft" />
     </div>
   </section>
 
+  <section class="map-section">
+    <div class="map-wrapper">
+      <img id="map-image" src="bluemap-screenshot(3)(1).png" alt="Carte du Monde Minecraft" />
+    </div>
+    <div class="map-description">
+      <a href="http://nationplume.craft.gg:40013/#world:13845:0:7386:17937:0:0:0:0:perspective" target="_blank" rel="noopener noreferrer" class="map-btn">Voir la carte interactive</a>
+    </div>
+  </section>
 
-<div class="map-wrapper">
-  <img id="map-image" src="bluemap-screenshot(3)(1).png" alt="Carte du Monde">
-</div>
-
-<section class="creators-skins" style="margin-top: 40px;">
-  <div class="skin-container">
-    <iframe src="https://minerender.org/embed/skin/?skin=AurelDefense&shadow=true" frameborder="0" width="150" height="200" allowtransparency="true"></iframe>
-    <div class="skin-name">AurelDefense</div>
-    <div class="skin-role">Chef de projet</div>
-  </div>
-  <div class="skin-container">
-    <iframe src="https://minerender.org/embed/skin/?skin=mimipepper&shadow=true" frameborder="0" width="150" height="200" allowtransparency="true"></iframe>
-    <div class="skin-name">Mimipepper</div>
-    <div class="skin-role">Directeur artistique</div>
-  </div>
-  <div class="skin-container">
-    <iframe src="https://minerender.org/embed/skin/?skin=0wos_&shadow=true" frameborder="0" width="150" height="200" allowtransparency="true"></iframe>
-    <div class="skin-name">0wos_</div>
-    <div class="skin-role">Web Designer</div>
-  </div>
-</section>
-
-
+  <section class="creators-skins">
+    <div class="skin-container">
+      <iframe src="https://minerender.org/embed/skin/?skin=AurelDefense&shadow=true" frameborder="0" width="150" height="200" allowtransparency="true"></iframe>
+      <div class="skin-name">AurelDefense</div>
+      <div class="skin-role">Chef de projet</div>
+    </div>
+    <div class="skin-container">
+      <iframe src="https://minerender.org/embed/skin/?skin=mimipepper&shadow=true" frameborder="0" width="150" height="200" allowtransparency="true"></iframe>
+      <div class="skin-name">Mimipepper</div>
+      <div class="skin-role">Directeur artistique</div>
+    </div>
+    <div class="skin-container">
+      <iframe src="https://minerender.org/embed/skin/?skin=0wos_&shadow=true" frameborder="0" width="150" height="200" allowtransparency="true"></iframe>
+      <div class="skin-name">0wos_</div>
+      <div class="skin-role">Web Designer</div>
+    </div>
+  </section>
 
   <section class="news-section">
-    <h2>News</h2>
+    <h2>Actualités</h2>
     <div class="news-grid">
       <article class="news-card">
         <h3>Lancement Officiel du Serveur</h3>
-        <p>...</p>
+        <p>Bienvenue sur Nation Plume ! Découvrez un monde original pensé pour la communauté.</p>
         <span class="news-date">10/07/2025</span>
       </article>
       <article class="news-card">
-        <h3>...</h3>
-        <p>...</p>
-        <span class="news-date">...</span>
+        <h3>Bientôt plus de contenu...</h3>
+        <p>Nous travaillons activement sur de nouvelles fonctionnalités, restez connectés !</p>
+        <span class="news-date">À venir</span>
       </article>
     </div>
   </section>
 
   <script src="stars.js"></script>
-  <script>
-    const btn = document.getElementById('start-map-btn');
-    const iframe = document.getElementById('map-iframe');
-    const wrapper = document.getElementById('map-wrapper');
-
-    btn.addEventListener('click', () => {
-      iframe.src = iframe.dataset.src;
-      iframe.style.display = 'block';
-      btn.style.display = 'none';
-      wrapper.classList.add('dimmed');
-    });
-  </script>
 </body>
 </html>
